@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #090e22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculadora{
+   background-color: #1d1e33;
+   width: 350px;
+   padding: 10px;
+   display: block;
+   text-align: center;
+   margin: 50px;
+}
+
+.calculadora h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin: 15px;
+}
+
+.generos{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simbolos{
+    border:1px solid #090e22;
+    padding: 20px;
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.simbolos:hover{
+    background-color: #59b602;
+    color: white;
+    transition: .5s;
+    border: none;
+    border-radius: 5px;
+}
+
+.input {
+    margin: 10px 0px 10px 0px;
+}
+
+.input input{
+    height: 25px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
+}
+
+.input label{
+    text-align: start;
+    margin-left: 75px;
+    display: block;
+}
+
+.btn-calcular{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.btn-limpar{
+    background: gray;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 80px;
+}
+
+.info{
+    font-size: 1.125rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.classicacao{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.classicacao th, .classicacao td {
+    border: 1px solid white; 
+    padding: 3px;  
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;  
+}
+
+@media (max-width: 600px) {
+    .calculadora {
+        width: 100%; /* Ajusta a largura da calculadora para ocupar 100% em telas pequenas */
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .simbolos {
+        font-size: 25px; /* Reduz o tamanho do ícone em telas menores */
+        padding: 15px;
+    }
+
+    .input input {
+        font-size: 1.1rem; /* Aumenta o tamanho da fonte dos inputs em telas menores */
+    }
+
+    .btn-calcular, .btn-limpar {
+        width: 100%; /* Faz os botões ocuparem toda a largura */
+        margin-top: 15px;
+    }
+
+    .info {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para melhor visualização em telas pequenas */
+    }
+
+    .classicacao th, .classicacao td {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte da tabela em telas menores */
+        padding: 5px;
+    }
+}
